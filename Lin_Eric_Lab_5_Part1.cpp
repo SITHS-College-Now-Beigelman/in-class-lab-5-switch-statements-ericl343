@@ -21,11 +21,12 @@ int main() {
     cout << "How many kilograms do you weight: " << endl;   
     cin >> kiloWeigh;
     
+    //The type of exercise the user wants to complete
     cout << "What type of exercise would like to complete? S for walking slowly, Q for walking quickly, or J for jogging" << endl;   
     cin >> exercise; 
     
-
-  if (exercise == 'S') 
+    //if and else if statements
+    if (exercise == 'S') 
     {
         cout << "Calories burned walking slowly " << "is " << minutesExe * (2 * 3.5 * kiloWeigh) / 200 << " calories." << endl;     //MET=2
     }
@@ -37,15 +38,16 @@ int main() {
     {
         cout << "Calories burned when jogging " << "is " << minutesExe * (8.8 * 3.5 * kiloWeigh) / 200 << " calories." << endl;     //MET=8.8
     }
-
+    //The End!!!
     return 0;
 }
-    /*
-    How many minutes do you exercise: 
-    10
-    How many kilograms do you weight: 
-    54.8
-    Calories burned walking slowly is 19.18 calories. 
-    Calories burned walking quickly is 28.77 calories.
-    Calories burned when jogging is 84.392 calories.
-    */
+
+/*
+    How many minutes do you exercise:
+    20
+    How many kilograms do you weight:
+    56
+    What type of exercise would like to complete? S for walking slowly, Q for walking quickly, or J for jogging
+    S
+    Calories burned walking slowly is 39.2 calories.
+*/
