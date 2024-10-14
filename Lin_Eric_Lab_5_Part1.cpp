@@ -18,11 +18,11 @@ int main() {
     cin >> minutesExe;
     
     //The amount of kilogram the user weighs
-    cout << "How many kilograms do you weight: " << endl;   
+    cout << "How many kilograms do you weigh: " << endl;   
     cin >> kiloWeigh;
     
     //The type of exercise the user wants to complete
-    cout << "What type of exercise would like to complete? S for walking slowly, Q for walking quickly, or J for jogging" << endl;   
+    cout << "What type of exercise would you like to complete? S for walking slowly, Q for walking quickly, or J for jogging" << endl;   
     cin >> exercise; 
     
     //if and else if statements
@@ -51,3 +51,4 @@ int main() {
     S
     Calories burned walking slowly is 39.2 calories.
 */
+
