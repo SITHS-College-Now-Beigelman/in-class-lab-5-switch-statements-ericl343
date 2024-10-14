@@ -68,12 +68,21 @@ int main() {
 }
 
 /*
-    How many minutes do you exercise:
-    20
-    How many kilograms do you weight:
-    56
-    What type of exercise would like to complete? S for walking slowly, Q for walking quickly, or J for jogging
-    S
-    Calories burned walking slowly is 39.2 calories.
+How many minutes do you exercise: 
+20
+How many kilograms do you weigh: 
+55
+What type of exercise would you like to complete? S for walking slowly, Q for walking quickly, or J for jogging
+Q
+Calories burned walking quickly is 57.75 calories.
+How many calories do you want to burn: 
+50
+To burn 50 calories, you need to exercise for the following duration:
+-------------------------------------------------
+Exercise            | Duration (min)
+-------------------------------------------------
+Walking Slowly      | 25.97
+Walking Quickly     | 17.32
+Jogging             | 5.90
 */
 
