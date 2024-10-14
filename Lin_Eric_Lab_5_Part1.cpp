@@ -3,6 +3,7 @@
 //October 8th, 2024
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 using namespace std;
@@ -38,6 +39,30 @@ int main() {
     {
         cout << "Calories burned when jogging " << "is " << minutesExe * (8.8 * 3.5 * kiloWeigh) / 200 << " calories." << endl;     //MET=8.8
     }
+
+    double targetCal;       //Amount of calories user wanna exercise
+
+    cout << "How many calories do you want to burn: " << endl;
+    cin >> targetCal;
+
+    // Calculate the required minutes for each exercise directly
+    double minS = (targetCal / (2 * 3.5 * kiloWeigh)) * 200;
+    double minQ = (targetCal / (3 * 3.5 * kiloWeigh)) * 200;
+    double minJ = (targetCal / (8.8 * 3.5 * kiloWeigh)) * 200;
+
+    // I'm trying to make a table here
+    cout << "To burn " << targetCal << " calories, you need to exercise for the following duration:" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << setw(20) << left << "Exercise" << "| Duration (min)" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << setw(20) << left << "Walking Slowly" << "| " << 
+        setw(10) << left << fixed << setprecision(2) << minS << endl;
+    cout << setw(20) << left << "Walking Quickly" << "| " << 
+        setw(10) << left << fixed << setprecision(2) << minQ << endl;
+    cout << setw(20) << left << "Jogging" << "| " << 
+        setw(10) << left << fixed << setprecision(2) << minJ << endl;
+
+    
     //The End!!!
     return 0;
 }
